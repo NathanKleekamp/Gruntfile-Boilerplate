@@ -16,10 +16,15 @@ module.exports = function(grunt) {
         },
 
         uglify: {
-          build: {
+          options: {
+            mangle: true,
+            compress: true,
+            quoteStyle: 1 // Enforce single quotation marks
+          },
+          target: {
             files: {
-              'js/dist/modernizr.min.js': ['js/src/vendor/modernizr.min.js'],
-              'js/dist/picturefill.min.js': ['js/src/vendor/picturefill.min.js']
+              'js/dist/modernizr.min.js': ['js/src/modernizr-latest.js'],
+              'js/dist/picturefill.min.js': ['js/src/picturefill.js']
             }
           }
         },
@@ -74,7 +79,7 @@ module.exports = function(grunt) {
             ]
           }
         },
-        
+
         watch: {
           css: {
             files: '**/*.scss',

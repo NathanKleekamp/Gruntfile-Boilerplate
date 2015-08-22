@@ -1,0 +1,29 @@
+{
+  "name": "gruntfile-boilerplate",
+  "version": "1.0.0",
+  "author": "Nathan Kleekamp",
+  "description": "A basic starting point for any performant front-end project.",
+  "contributors": [
+    {
+      "name": "Nathan Kleekamp",
+      "twitter": "@nathankleekamp"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NathanKleekamp/Gruntfile-Boilerplate.git"
+  },
+  "license": "MIT",
+  "private": "true",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-svgmin": "*",
+    "grunt-contrib-compress": "*",
+    "matchdep": "*",
+    "svgo": "*"
+  }
+}
