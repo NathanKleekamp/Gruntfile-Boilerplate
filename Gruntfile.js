@@ -10,7 +10,7 @@ module.exports = function(grunt) {
               style: 'compressed'
             },
             files: {
-              'style.css': 'style.scss'
+              //'style.css': 'style.scss'
             }
           }
         },
@@ -23,8 +23,7 @@ module.exports = function(grunt) {
           },
           target: {
             files: {
-              'js/dist/modernizr.min.js': ['js/src/modernizr-latest.js'],
-              'js/dist/picturefill.min.js': ['js/src/picturefill.js']
+              // 'path/to/destination.min.js': ['list/of/files.js', 'another/js/file.js']
             }
           }
         },
@@ -34,9 +33,9 @@ module.exports = function(grunt) {
             files: [
               {
                 expand: true,
-                cwd: 'img/src/',
+                cwd: //'img/src/',
                 src: ['**/*.{png,jpg,gif}'],
-                dest: 'img/dist/'
+                dest: //'img/dist/'
               }
             ]
           }
@@ -53,9 +52,9 @@ module.exports = function(grunt) {
             files: [
               {
                 expand: true,
-                cwd: 'img/src',
+                cwd: //'img/src',
                 src: ['*.svg'],
-                dest: 'img/dist',
+                dest: //'img/dist',
                 ext: '.min.svg'
               }
             ]
@@ -71,9 +70,9 @@ module.exports = function(grunt) {
             files: [
               {
                 expand: true,
-                cwd: 'img/dist',
+                cwd: //'img/dist',
                 src: ['*.svg'],
-                dest: 'img/dist',
+                dest: //'img/dist',
                 ext: '.svgz'
               }
             ]
